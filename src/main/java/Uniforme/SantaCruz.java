@@ -1,3 +1,5 @@
+package Uniforme;
+
 public class SantaCruz  extends CreadorUniforme{
 
   protected Prenda crearPrendaSuperior(){

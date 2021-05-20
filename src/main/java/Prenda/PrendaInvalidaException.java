@@ -1,3 +1,5 @@
+package Prenda;
+
 public class PrendaInvalidaException extends RuntimeException {
   public PrendaInvalidaException() {
     super();

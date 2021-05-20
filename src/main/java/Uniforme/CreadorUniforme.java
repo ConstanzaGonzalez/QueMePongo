@@ -1,3 +1,5 @@
+package Uniforme;
+
 public abstract class CreadorUniforme {
 
   public Uniforme crearUniforme(){

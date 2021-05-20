@@ -1,3 +1,5 @@
+package Uniforme;
+
 public class Uniforme {
   Prenda prendaSuperior;
   Prenda prendaInferior;
