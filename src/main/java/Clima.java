@@ -1,4 +1,7 @@
+import java.util.List;
+import java.util.Map;
+
 public interface Clima {
-  void condicionesClimaticas(AccuWeatherAPI apiClima);
-  Double temperatura();
+  List<Map<String, Object>> getWeather(String ciudad);
+  Double getTemperatura();
 }

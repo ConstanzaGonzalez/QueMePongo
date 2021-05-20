@@ -1,6 +1,5 @@
 import Atuendo.Atuendo;
-import Prenda.Prenda;
-import Prenda.Categoria;
+import Prenda.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,13 +7,13 @@ import java.util.stream.Collectors;
 
 //La idea es que implementen la misma interfaz Clima, para poder usar disitntos servicios.
 public class GeneradorAtuendo {
-  Clima clima;
-  public GeneradorAtuendo(Clima clima){
-    this.clima = clima;
+  Clima apiClima;
+  public GeneradorAtuendo(Clima apiClima){
+    this.apiClima = apiClima;
   }
 
-  public void setClima(Clima clima){
-    this.clima = clima;
+  public void setClima(Clima apiClima){
+    this.apiClima = apiClima;
   }
 
   public Atuendo generarAtuendo(List<Prenda> prendas){
@@ -27,6 +26,6 @@ public class GeneradorAtuendo {
     return prendas.stream().filter(prenda -> prenda.getCategoria().equals(categoria)).collect(Collectors.toList());
   }
   public Optional<Prenda> algunaPrenda(Categoria categoria, List<Prenda> prendas){
-    return getPrendaDeCategoria(categoria, prendas).stream().filter(prenda -> prenda.temperaturaAdecuada(clima.temperatura())).findAny();
+    return getPrendaDeCategoria(categoria, prendas).stream().filter(prenda -> prenda.temperaturaAdecuada(apiClima.getTemperatura())).findAny();
   }
 }
