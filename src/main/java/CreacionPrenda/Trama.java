@@ -1,4 +1,4 @@
-package Prenda;
+package CreacionPrenda;
 
 public enum Trama {
   LISA, RAYADA, CUADROS, LUNARES, ESTAMPADO;

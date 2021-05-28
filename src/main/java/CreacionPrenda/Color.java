@@ -1,4 +1,4 @@
-package Prenda;
+package CreacionPrenda;
 
 public class Color {
   String color;

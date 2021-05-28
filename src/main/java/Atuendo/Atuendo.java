@@ -1,16 +1,14 @@
 package Atuendo;
 
-import Prenda.Prenda;
-
-import java.util.Optional;
+import CreacionPrenda.Prenda;
 
 public class Atuendo {
-  Optional<Prenda> superior;
-  Optional<Prenda> inferior;
-  Optional<Prenda> calzado;
-  Optional<Prenda> accesorio;
+  private Prenda superior;
+  private Prenda inferior;
+  private Prenda calzado;
+  private Prenda accesorio;
 
-  public Atuendo(Optional<Prenda> superior, Optional<Prenda> inferior, Optional<Prenda> calzado, Optional<Prenda> accesorio) {
+  public Atuendo(Prenda superior, Prenda inferior, Prenda calzado, Prenda accesorio) {
     this.superior = superior;
     this.inferior = inferior;
     this.calzado = calzado;

@@ -1,4 +1,4 @@
-package Prenda;
+package CreacionPrenda;
 
 public class Prenda {
   TipoPrenda tipo;

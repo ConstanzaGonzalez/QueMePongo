@@ -1,4 +1,4 @@
-package Prenda;
+package CreacionPrenda;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +9,7 @@ public enum TipoPrenda {
   CAMISA(Categoria.SUPERIOR, Arrays.asList(Material.ALGODON), 30.0),
   PANTALON(Categoria.INFERIOR, Arrays.asList(Material.JEAN, Material.CUERO), 25.0);
 
-  private final Categoria categoria;
+  public final Categoria categoria;
   private List<Material> materialesValidos;
   private Double temperaturaMaxima;
 
